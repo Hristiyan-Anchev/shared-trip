@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../static/dist/css/bootstrap.css" rel="stylesheet" type="text/css"> <!--TODO: CHANGE-->
+    <title>Page Title</title>
+</head>
+
+<body>
+    {{>header}}
+
+    {{> errorNotification}}
+
+    <section class="py-5">
+        <div class="container">
+            <h1 style="margin: 2%; text-align: center;">Offer Tripp</h1>
+            <div>
+
+
+
+                <form action="/offer-tripp" method="POST">
+                    <div class="form-group">
+                        <label for="startAndEndPoint">Starting Point - End Point</label>
+                        <input type="text" class="form-control" id="startAndEndPoint" aria-describedby="emailHelp"
+                            placeholder="Studentski grad - Pamporovo" name="trippRoute" value="{{formData.trippRoute}}" >
+                    </div>
+                    <div class="form-group">
+                        <label for="dateTime">Date - Time</label>
+                        <input type="text" class="form-control" id="dateTime" placeholder="29 December 2019 - 19:00"
+                        name="dateTime" value="{{formData.dateTime}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="carImage">Car Image</label>
+                        <input type="text" class="form-control" id="carImage" placeholder="https://..."
+                        name="imageURL" value="{{imageURL}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="seats">Seats</label>
+                        <input min="1" max="6" type="number" class="form-control" id="seats" placeholder="4..."
+                        name="seats" value="{{seats}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description"
+                            placeholder="Price, Car information..." name="description" value="{{description}}">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+{{>footer}}
+
+</body>
+
+</html>

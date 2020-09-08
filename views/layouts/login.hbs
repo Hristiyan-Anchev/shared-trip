@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../static/dist/css/bootstrap.css" rel="stylesheet" type="text/css"> <!--TODO: CHANGE-->
+    <title>Page Title</title>
+</head>
+
+<body>
+
+{{>header}}
+
+    {{> errorNotification}}
+
+
+    <section class="py-5">
+        <div class="container">
+            <h1 style="margin: 2%; text-align: center;">Login</h1>
+            <form action="/login" method="post">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password">
+
+                <button type="submit" class="btn btn-success">Submit</button>
+
+            </form>
+        </div>
+    </section>
+
+
+   {{>footer}}
+</body>
+
+</html>
