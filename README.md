@@ -3,7 +3,7 @@ Simple trip sharing application using Express-JS and MongoDB.
 To run the application:
 
 1. Create a file inside the root directory named .env
-Inside specify your environment variables such as database URI and your private key strings as well as server port.
+and specify your environment variables such as database URI and your private key strings as well as server port.
 
 EXAMPLE of .env file:
 DB_HOST = mongodb://localhost:27017/tripp
