@@ -1,4 +1,4 @@
-Simple trip sharing application using Express-JS and MongoDB.
+# Simple trip sharing application using Express-JS and MongoDB.
 
 To run the application:
 
